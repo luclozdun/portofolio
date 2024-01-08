@@ -235,7 +235,7 @@
               </p>
               <div
                 id="backendSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2"
+                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
               ></div>
             </div>
             <div class="w-full">
@@ -246,7 +246,7 @@
               </p>
               <div
                 id="dbSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2"
+                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
               ></div>
             </div>
             <div class="w-full">
@@ -257,7 +257,7 @@
               </p>
               <div
                 id="frontendSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2"
+                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
               ></div>
             </div>
             <div class="w-full">
@@ -268,7 +268,7 @@
               </p>
               <div
                 id="extraSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2"
+                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
               ></div>
             </div>
           </div>
@@ -339,8 +339,8 @@
             "space-y-2"
           );
           section.innerHTML = `
-                <p class="text-center font-medium">${value.name}</p>
-                                    <p class="text-center">${
+                <p class="text-center font-medium max-sm:text-sm">${value.name}</p>
+                                    <p class="text-center max-sm:text-sm">${
                                       value.framework
                                     }</p>
                                     <div class="py-2">
@@ -488,22 +488,6 @@
           type: "icon-text",
         },
         {
-          name: "EXCEL",
-          framework: "Tabla - Macro",
-          src: "./svg/excel.svg",
-          percentage: "66%",
-          level: "Intermedio",
-          type: "svg",
-        },
-        {
-          name: "PROJECT",
-          framework: "Cronograma",
-          src: "./svg/projectms.svg",
-          percentage: "66%",
-          level: "Intermedio",
-          type: "svg",
-        },
-        {
           name: "SCRUM",
           framework: "Metodología",
           icon: "fas fa-sync text-cyan-500",
@@ -512,9 +496,25 @@
           type: "icon-text",
         },
         {
+          name: "EXCEL",
+          framework: "Tabla - Macro",
+          src: "./svg/excel.svg",
+          percentage: "66%",
+          level: "Intermedio",
+          type: "svg",
+        },
+        {
           name: "BOLD REPORT",
           framework: "Reportería",
           src: "./svg/bold-report.svg",
+          percentage: "66%",
+          level: "Intermedio",
+          type: "svg",
+        },
+        {
+          name: "PROJECT",
+          framework: "Cronograma",
+          src: "./svg/projectms.svg",
           percentage: "66%",
           level: "Intermedio",
           type: "svg",
