@@ -587,7 +587,7 @@
           var links = "";
 
           value.links?.forEach((link, li) => {
-            links += `<a class=" px-4 py-2 rounded-md ${link?.class}" target="_blank" href="${link?.href}">${link?.description}</a>`;
+            links += `<a class=" px-4 py-2 rounded-md ${link?.class} max-md:w-full max-md:mx-2" target="_blank" href="${link?.href}">${link?.description}</a>`;
           });
 
           section.innerHTML = `
@@ -612,19 +612,19 @@
                     ${value.text}
                 </div>
                 <div class="w-full  h-full flex justify-center items-center flex-col max-xl:mt-5 max-sm:px-3 max-sm:pb-6">
-                    <div class="bg-gray-200 px-5 py-6 rounded-md max-sm:w-full max-sm:px-2 max-sm:py-3">
+                    <div class="bg-gray-600 px-5 py-6 rounded-md max-sm:w-full max-sm:px-2 max-sm:py-3">
                         <div class="rounded-md overflow-hidden bg-white flex justify-center items-center card-img">
                             <img src="${value.image}" class="w-full ">
                         </div>
                     </div>
-                    <div class="bg-gray-200 w-5 h-6 max-sm:w-2 max-sm:h-3"></div>
-                    <div class="bg-gray-200 w-20 h-5 rounded-full max-sm:w-10 max-sm:h-3"></div>
+                    <div class="bg-gray-600 w-5 h-6 max-sm:w-2 max-sm:h-3"></div>
+                    <div class="bg-gray-600 w-20 h-5 rounded-full max-sm:w-20 max-sm:h-3"></div>
                 </div>
             </div>
             ${
               value.button
                 ? `
-                <div class="flex justify-center space-x-5 items-center py-5 font-medium text-white">
+                <div class="flex justify-center space-x-5 items-center py-5 font-medium text-white max-md:space-x-0 max-md:mx-5 max-md:text-center max-md:space-y-2 max-md:flex-col">
                     ${links}
                 </div>
                 `
