@@ -109,7 +109,7 @@
           </div>
         </div>
       </section>
-      <section id="about-me" class="mx-10 my-8 about-me max-sm:mx-4">
+      <section id="about-me" class="px-10 py-8 about-me max-sm:px-4 bg-slate-50">
         <div class="w-full">
           <div class="w-full h-fit flex">
             <div class="w-2 h-auto bg-violet-500 mr-5"></div>
@@ -140,20 +140,28 @@
               </p>
             </div>
             <div>
-              <div
-                class="w-2/5 photo p-2 bg-violet-500 rounded-full overflow-hidden flex"
-              >
-                <div
-                  class="w-full h-full bg-white rounded-full overflow-hidden"
-                >
+              <div class="w-2/5 photo relative">
+                <div class="w-full h-full bg-violet-500 flex relative"></div>
+                <div class="w-full h-full bg-white photo absolute ml-5 mt-5 top-0">
                   <img src="./img/foto.webp" class="h-full w-full" />
                 </div>
+                
               </div>
-              <div class="w-full mt-3 flex justify-center items-center space-x-3">
-                <a class="bg-blue-500 w-10 h-10 flex justify-center items-center rounded-md" href="https://www.linkedin.com/in/luciano-mardonio-lopez-duran-0b9334160" target="_blank">
+              <div
+                class="w-full mt-10 flex justify-center items-center space-x-3"
+              >
+                <a
+                  class="bg-blue-500 w-10 h-10 flex justify-center items-center rounded-md"
+                  href="https://www.linkedin.com/in/luciano-mardonio-lopez-duran-0b9334160"
+                  target="_blank"
+                >
                   <i class="fab fa-linkedin text-3xl text-white"></i>
                 </a>
-                <a class="bg-gray-700 w-10 h-10 flex justify-center items-center rounded-md" href="https://github.com/luclozdun" target="_blank">
+                <a
+                  class="bg-gray-700 w-10 h-10 flex justify-center items-center rounded-md"
+                  href="https://github.com/luclozdun"
+                  target="_blank"
+                >
                   <i class="fab fa-github text-3xl text-white"></i>
                 </a>
               </div>
@@ -266,7 +274,7 @@
           </div>
         </div>
       </section>
-      <section id="projects" class="mx-10 my-8 projects max-sm:mx-4">
+      <section id="projects" class="px-10 py-8 projects max-sm:px-4 bg-slate-50">
         <div class="w-full">
           <div class="w-full h-fit flex mb-5">
             <div class="w-2 h-auto bg-violet-500"></div>
@@ -560,9 +568,11 @@
             "grid-cols-1",
             "gap-5",
             "border",
-            "border-gray-100",
-            "border-4",
-            "mb-5"
+            "border-slate-200",
+            "border-1",
+            "mb-5",
+            "bg-white",
+            "rounded-lg"
           );
 
           var cookies = "";
@@ -579,7 +589,7 @@
           value.links?.forEach((link, li) => {
             links += `<a class=" px-4 py-2 rounded-md ${link?.class}" target="_blank" href="${link?.href}">${link?.description}</a>`;
           });
-          
+
           section.innerHTML = `
             <div class="p-5 grid grid-cols-2 max-xl:grid-cols-1 text-justify max-sm:p-1">
                 <div class="space-y-8 mx-14 max-md:mx-3">
