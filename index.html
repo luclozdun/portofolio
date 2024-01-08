@@ -300,8 +300,6 @@
           content.classList.add("max-md:hidden");
           content.classList.remove("max-md:flex");
         }
-        console.log("ASd");
-        console.log(isHidden);
       });
 
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -581,7 +579,7 @@
           value.links?.forEach((link, li) => {
             links += `<a class=" px-4 py-2 rounded-md ${link?.class}" target="_blank" href="${link?.href}">${link?.description}</a>`;
           });
-          console.log(links);
+          
           section.innerHTML = `
             <div class="p-5 grid grid-cols-2 max-xl:grid-cols-1 text-justify max-sm:p-1">
                 <div class="space-y-8 mx-14 max-md:mx-3">
@@ -641,7 +639,7 @@
               color: "bg-blue-500",
             },
           ],
-          image: "./img/Hasse.webp",
+          image: "./img/hasse.webp",
           text: `<p>
             Durante el año académico de <span class="font-medium text-violet-500">2019</span>, trabajé en un proyecto de Diagrama de Hasse como parte de mi curso de <span class="font-medium text-violet-500">Matemática Discreta</span> en la Universidad.
             Este proyecto se llevó a cabo en respuesta a los requisitos establecidos por el profesor. Su objetivo principal fue la representación gráfica de números y la creación de un diagrama que destacara la composición de números primos.
@@ -732,7 +730,7 @@
               color: "bg-purple-500",
             },
           ],
-          image: "./img/KeekoYa.webp",
+          image: "./img/Keekoya.webp",
           text: `<p>
             "Es un sistema diseñado para facilitar las ventas de
             productos de pastelería, concebido como una idea
