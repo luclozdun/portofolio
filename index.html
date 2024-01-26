@@ -1,610 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luciano Lopez</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link rel="icon" href="./svg/logo.svg" type="image/svg+xml" />
-  </head>
-  <body>
-    <div class="container-all">
-      <div class="w-full nav-bar h-14 z-10 fixed bg-slate-800" id="navbar">
-        <div class="">
-          <div class="flex justify-end max-md:flex-col">
-            <div class="hidden max-md:block">
-              <div class="text-start p-3">
-                <div>
-                  <div
-                    id="hamburg"
-                    class="flex flex-col w-fit items-center justify-between h-6"
-                  >
-                    <div class="w-8 h-1 bg-white"></div>
-                    <div class="w-8 h-1 bg-white"></div>
-                    <div class="w-8 h-1 bg-white"></div>
-                  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luciano Lopez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="icon" href="./svg/logo.svg" type="image/svg+xml" />
+</head>
+
+<body>
+  <div class="container-all">
+    <div class="w-full nav-bar h-14 z-10 fixed bg-slate-800" id="navbar">
+      <div class="">
+        <div class="flex justify-end max-md:flex-col">
+          <div class="hidden max-md:block">
+            <div class="text-start p-3">
+              <div>
+                <div id="hamburg" class="flex flex-col w-fit items-center justify-between h-6">
+                  <div class="w-8 h-1 bg-white"></div>
+                  <div class="w-8 h-1 bg-white"></div>
+                  <div class="w-8 h-1 bg-white"></div>
                 </div>
               </div>
             </div>
-            <ul
-              id="nav-bar-content"
-              class="w-fit flex space-x-2 text-white font-medium max-md:flex-col max-md:w-full max-md:text-lg max-md:text-center bg-slate-800 max-md:h-screen max-md:hidden"
-            >
-              <li>
-                <a href="#home">
-                  <p class="w-full relative">Inicio</p>
-                </a>
-              </li>
-              <li>
-                <a href="#about-me">
-                  <p class="w-full relative">Sobre Mi</p>
-                </a>
-              </li>
-              <li>
-                <a href="#knowledges">
-                  <p class="w-full relative">Conocimientos</p>
-                </a>
-              </li>
-              <li>
-                <a href="#projects">
-                  <p class="w-full relative">Proyectos</p>
-                </a>
-              </li>
-            </ul>
+          </div>
+          <ul id="nav-bar-content"
+            class="w-fit flex space-x-2 text-white font-medium max-md:flex-col max-md:w-full max-md:text-lg max-md:text-center bg-slate-800 max-md:h-screen max-md:hidden">
+            <li>
+              <a href="#home">
+                <p class="w-full relative">Inicio</p>
+              </a>
+            </li>
+            <li>
+              <a href="#about-me">
+                <p class="w-full relative">Sobre Mi</p>
+              </a>
+            </li>
+            <li>
+              <a href="#knowledges">
+                <p class="w-full relative">Conocimientos</p>
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <p class="w-full relative">Proyectos</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="h-screen w-full flex items-center z-5" id="home">
+      <div class="relative w-full h-full flex flex-col">
+        <div class="config absolute bottom-0 max-sm:w-100">
+          <svg class="fill-blue-100" width="100%" viewBox="0 0 350 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0 145.646L6.46809 137.838C3.96704 134.184 1.80317 130.311 0 126.263V117.188L2.81644 116.924L3.60271 119.119C5.7965 125.237 8.84746 130.988 12.6761 136.209L14.0605 138.096L0 155.07V145.646ZM0 166.725L14.9152 179.081C17.9697 181.611 22.5072 181.19 25.032 178.138L37.1873 163.464C42.2411 165.724 47.5318 167.403 52.9732 168.474L54.5261 184.036C54.9006 187.843 58.738 194.121 62.5767 193.783L88.0806 191.374C90.0046 191.194 91.736 190.278 92.9616 188.793C94.1823 187.313 94.3231 180.065 94.3231 180.065L92.8471 165.273C98.2439 163.278 103.368 160.664 108.13 157.479L122.069 169.027C125.118 171.552 129.656 171.12 132.186 168.066L148.528 148.338C151.058 145.284 150.635 140.748 147.587 138.223L134.089 127.042C136.584 121.636 138.405 115.966 139.52 110.123L156.73 108.504C158.645 108.327 160.375 107.415 161.6 105.937C162.828 104.458 163.402 102.588 163.22 100.673L160.832 75.1756C160.475 71.3442 156.829 68.3221 152.996 68.682L136.091 70.2676C133.952 64.5985 131.126 59.2283 127.66 54.2517L138.474 41.1967C141.004 38.1425 140.577 33.5995 137.524 31.0705L117.793 14.7259C114.739 12.1957 110.197 12.6225 107.663 15.6779L96.7608 28.8389C91.2705 26.4278 85.5008 24.7054 79.5552 23.7039L77.9461 6.52683C77.605 2.69825 73.9228 -0.341831 70.1197 0.0309859L44.5995 2.41933C40.6665 2.79832 37.7587 6.30867 38.1212 10.2492L39.7788 27.9546C34.3884 30.1082 29.2749 32.9049 24.5317 36.2864L10.6444 24.7824C7.58388 22.2472 3.03609 22.6683 0.507062 25.7213L0 26.3334V35.7465L5.13381 29.5491C5.55054 29.046 6.30353 28.9814 6.81361 29.4039L24.3474 43.9285L26.2481 42.4818C31.6604 38.3492 37.6374 35.0794 44.0092 32.7635L46.1898 31.97L44.1041 9.69075C44.0427 9.03628 44.5272 8.4548 45.1713 8.39256L70.6968 6.0037C71.1119 5.96095 71.4091 6.15165 71.5476 6.26645C71.6879 6.38265 71.9296 6.63991 71.9671 7.06866L74.0188 28.969L76.3836 29.2902C83.3305 30.2354 90.035 32.2354 96.3115 35.2345L98.4254 36.245L112.292 19.5052C112.716 18.9937 113.45 18.9261 113.962 19.3503L133.693 35.6949C134.196 36.1112 134.266 36.8607 133.85 37.3633L120.047 54.0264L121.459 55.9185C125.664 61.5598 128.945 67.79 131.209 74.4415L131.974 76.6843L153.558 74.6574C153.988 74.6162 154.289 74.8078 154.429 74.924C154.571 75.0416 154.813 75.3017 154.853 75.7302L157.242 101.234C157.284 101.66 157.093 101.96 156.977 102.1C156.861 102.24 156.602 102.481 156.173 102.521L134.357 104.572L133.992 106.876C132.911 113.711 130.788 120.316 127.679 126.505L126.608 128.642L143.756 142.847C144.253 143.258 144.32 144.003 143.903 144.506L127.56 164.235C127.141 164.74 126.397 164.813 125.898 164.405L108.427 149.932L106.547 151.279C101.093 155.179 95.0852 158.241 88.689 160.376L86.425 161.132L88.3735 180.658C88.4152 181.072 88.4431 184.839 88.3281 184.978C88.2119 185.119 87.953 185.359 87.5216 185.4L62.0295 187.809C61.6008 187.846 61.297 187.654 61.1522 187.534C61.0192 187.424 60.726 184.342 60.652 183.564L60.6388 183.426L58.5242 163.339L56.2367 162.965C49.7828 161.909 43.539 159.924 37.6726 157.066L35.5492 156.032L20.409 174.309C19.9965 174.807 19.2503 174.873 18.7477 174.457L0 158.926V166.725ZM0 60.1075V88.7498L0.284967 86.7295C1.2093 80.1898 3.08207 73.8428 5.85388 67.8609L6.8254 65.7615L0 60.1075ZM100.269 124.992C115.76 106.291 113.147 78.4713 94.4448 62.9786C75.7423 47.4859 47.9239 50.0976 32.4327 68.7981C16.94 87.5006 19.5497 115.32 38.2522 130.813C56.9546 146.306 84.7758 143.694 100.269 124.992ZM95.6428 121.161C82.2614 137.315 58.2375 139.57 42.0835 126.188C25.9314 112.808 23.6766 88.7838 37.0579 72.6303C50.4367 56.4797 74.4606 54.2246 90.6127 67.6047C106.767 80.9863 109.022 105.01 95.6428 121.161ZM272.901 335.355C273.226 333.593 273.405 332.089 273.405 332.089V317.224C278.974 315.774 284.332 313.682 289.386 310.986L302.111 323.861C304.893 326.676 309.451 326.697 312.272 323.909L330.493 305.901C333.314 303.113 333.343 298.558 330.561 295.743L318.24 283.276C321.259 278.145 323.633 272.684 325.323 266.98L342.61 267.079C344.532 267.093 346.345 266.357 347.71 265.008C349.079 263.658 349.835 261.854 349.845 259.931L350 234.322C350.025 230.474 346.698 227.105 342.847 227.083L325.869 226.982C324.303 221.128 322.025 215.504 319.069 210.208L331.127 198.291C333.948 195.503 333.973 190.94 331.186 188.121L313.176 169.898C310.388 167.077 305.826 167.05 303.002 169.839L290.847 181.853C285.623 178.908 280.053 176.622 274.236 175.035L274.34 157.783C274.381 153.939 271.019 150.549 267.197 150.542L241.566 150.384C237.615 150.371 234.373 153.575 234.342 157.532L234.234 175.315C228.656 176.923 223.29 179.198 218.235 182.092L205.558 169.266C202.765 166.439 198.198 166.406 195.378 169.193L177.156 187.202C174.334 189.992 174.314 194.56 177.107 197.386L190.187 210.62C187.494 215.534 185.372 220.739 183.864 226.148L165.031 226.039C161.081 226.01 157.84 229.21 157.804 233.178L157.651 258.814C157.627 262.638 160.968 266.016 164.793 266.038L183.958 266.152C185.459 271.441 187.544 276.536 190.177 281.348L176.527 294.839C173.71 297.623 173.689 302.182 176.477 305.003L194.488 323.226C197.276 326.047 201.833 326.078 204.648 323.292L218.2 309.897C223.005 312.648 228.102 314.844 233.411 316.45V332.089C233.409 333.05 233.61 334.189 233.973 335.355H239.577C239.543 334.346 239.551 332.761 239.553 332.23V332.228L239.554 332.089L239.444 311.892L237.205 311.292C230.888 309.6 224.872 307.005 219.318 303.579L217.308 302.34L200.428 319.023C199.968 319.478 199.219 319.469 198.76 319.005L180.75 300.782C180.282 300.309 180.284 299.575 180.752 299.115L197.707 282.359L196.516 280.343C193.225 274.768 190.76 268.742 189.185 262.437L188.62 260.174L164.836 260.034C164.419 260.034 164.137 259.811 164.006 259.679C163.876 259.547 163.659 259.262 163.662 258.848L163.814 233.224C163.818 232.57 164.349 232.042 164.998 232.046L188.536 232.182L189.099 229.878C190.668 223.462 193.162 217.333 196.514 211.655L197.689 209.663L181.379 193.16C180.914 192.689 180.914 191.932 181.379 191.472L199.602 173.462C200.066 173.002 200.822 173.013 201.288 173.484L217.293 189.678L219.328 188.427C225.124 184.852 231.396 182.192 237.966 180.52L240.215 179.947L240.351 157.571C240.355 156.913 240.895 156.383 241.542 156.385L267.179 156.542C267.596 156.541 267.873 156.76 267.999 156.888C268.127 157.018 268.342 157.298 268.337 157.728L268.204 179.724L270.525 180.278C277.344 181.909 283.817 184.565 289.764 188.172L291.768 189.387L307.228 174.107C307.701 173.64 308.438 173.646 308.905 174.119L326.916 192.342C327.374 192.806 327.37 193.559 326.906 194.018L311.517 209.228L312.734 211.251C316.358 217.282 319.004 223.807 320.596 230.65L321.135 232.958L342.814 233.084C343.245 233.086 343.526 233.307 343.654 233.436C343.784 233.567 343.999 233.85 343.996 234.28L343.841 259.895C343.84 260.324 343.62 260.603 343.491 260.731C343.361 260.859 343.08 261.072 342.649 261.07L320.737 260.944L320.146 263.2C318.39 269.895 315.622 276.257 311.914 282.106L310.637 284.126L326.29 299.964C326.743 300.422 326.735 301.17 326.271 301.629L308.05 319.637C307.583 320.099 306.835 320.098 306.379 319.642L290.431 303.506L288.427 304.659C282.612 307.999 276.331 310.449 269.754 311.938L267.426 312.465V332.089C267.427 332.37 267.268 334.175 267.126 335.355H272.901ZM284.79 277.879C302.062 260.808 302.224 232.867 285.152 215.594C268.08 198.321 240.14 198.157 222.869 215.227C205.596 232.299 205.43 260.24 222.502 277.514C239.574 294.787 267.517 294.951 284.79 277.879ZM280.567 273.607C265.648 288.353 241.519 288.211 226.773 273.292C212.03 258.374 212.171 234.245 227.091 219.5C242.007 204.757 266.136 204.899 280.88 219.816C295.625 234.736 295.484 258.865 280.567 273.607ZM144.272 325.301C144.134 328.672 143.831 332.026 143.363 335.355H134.872C135.551 330.921 135.912 326.434 135.951 321.922L135.978 318.622L165.459 311.718C166.348 311.51 166.903 310.615 166.695 309.727L158.531 274.864C158.319 273.96 157.443 273.415 156.538 273.627L126.921 280.563L125.42 277.653C120.962 269.013 115.181 261.125 108.238 254.207L105.874 251.852L122.114 225.728C122.434 225.219 122.383 224.729 122.325 224.481C122.267 224.236 122.097 223.773 121.599 223.47L91.1278 204.579C90.3572 204.104 89.3252 204.343 88.84 205.124L72.3174 231.698L69.2157 230.741C60.1548 227.94 50.7269 226.536 41.1984 226.569L37.8562 226.575L30.6006 195.594C30.3896 194.693 29.4956 194.129 28.6056 194.338L0 200.689V192.418L26.6869 186.168C32.0883 184.903 37.5134 188.274 38.7798 193.682L44.5264 218.219C52.6737 218.458 60.7389 219.661 68.5688 221.813L81.6992 200.694C84.6287 195.999 90.8393 194.545 95.5435 197.443L126.008 216.33C130.562 219.126 132.095 225.621 129.236 230.173L116.498 250.663C122.278 256.798 127.252 263.588 131.331 270.909L154.616 265.456C160.025 264.192 165.448 267.551 166.712 272.948L174.877 307.811C176.14 313.206 172.774 318.626 167.37 319.892L144.272 325.301ZM99.8693 306.977C102.132 316.637 101.97 326.309 99.7828 335.355H91.0992C93.4618 326.991 93.8025 317.936 91.6847 308.894C85.001 280.354 56.3169 262.582 27.7425 269.274C16.5793 271.888 7.05917 277.854 0 285.855V274.119C7.22399 267.974 15.9738 263.409 25.8293 261.101C58.9151 253.352 92.1302 273.931 99.8693 306.977Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center absolute justify-center w-full h-full overflow-hidden">
+        <div
+          class="rounded-full circle-background relative border-8 border-sky-300 border-opacity-20 max-md:w-60 max-md:h-60">
+        </div>
+        <div class="absolute">
+          <div class="flex">
+            <div class="w-3 h-auto flex items-center mr-4 ml-8 max-md:hidden">
+              <div class="w-3 h-2/5 bg-orange-500"></div>
+            </div>
+            <div
+              class="-sm:text-lg text-5xl font-bold text-center card-information max-lg:text-4xl max-md:text-3xl max-sm:text-xl leading-tight">
+              <p>
+                Hola! Soy Luciano Lopez <br />futuro
+                <span class="text-violet-500">Ingeniero de Software</span>
+                <br />
+                10mo ciclo
+              </p>
+            </div>
+            <div class="w-3 h-auto flex items-center mr-4 ml-8 max-md:hidden">
+              <div class="w-3 h-2/5 bg-orange-500"></div>
+            </div>
           </div>
         </div>
       </div>
-      <section class="h-screen w-full flex items-center z-5" id="home">
-        <div class="relative w-full h-full flex flex-col">
-          <div class="config absolute bottom-0 max-sm:w-100">
-            <svg
-              class="fill-blue-100"
-              width="100%"
-              viewBox="0 0 350 336"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 145.646L6.46809 137.838C3.96704 134.184 1.80317 130.311 0 126.263V117.188L2.81644 116.924L3.60271 119.119C5.7965 125.237 8.84746 130.988 12.6761 136.209L14.0605 138.096L0 155.07V145.646ZM0 166.725L14.9152 179.081C17.9697 181.611 22.5072 181.19 25.032 178.138L37.1873 163.464C42.2411 165.724 47.5318 167.403 52.9732 168.474L54.5261 184.036C54.9006 187.843 58.738 194.121 62.5767 193.783L88.0806 191.374C90.0046 191.194 91.736 190.278 92.9616 188.793C94.1823 187.313 94.3231 180.065 94.3231 180.065L92.8471 165.273C98.2439 163.278 103.368 160.664 108.13 157.479L122.069 169.027C125.118 171.552 129.656 171.12 132.186 168.066L148.528 148.338C151.058 145.284 150.635 140.748 147.587 138.223L134.089 127.042C136.584 121.636 138.405 115.966 139.52 110.123L156.73 108.504C158.645 108.327 160.375 107.415 161.6 105.937C162.828 104.458 163.402 102.588 163.22 100.673L160.832 75.1756C160.475 71.3442 156.829 68.3221 152.996 68.682L136.091 70.2676C133.952 64.5985 131.126 59.2283 127.66 54.2517L138.474 41.1967C141.004 38.1425 140.577 33.5995 137.524 31.0705L117.793 14.7259C114.739 12.1957 110.197 12.6225 107.663 15.6779L96.7608 28.8389C91.2705 26.4278 85.5008 24.7054 79.5552 23.7039L77.9461 6.52683C77.605 2.69825 73.9228 -0.341831 70.1197 0.0309859L44.5995 2.41933C40.6665 2.79832 37.7587 6.30867 38.1212 10.2492L39.7788 27.9546C34.3884 30.1082 29.2749 32.9049 24.5317 36.2864L10.6444 24.7824C7.58388 22.2472 3.03609 22.6683 0.507062 25.7213L0 26.3334V35.7465L5.13381 29.5491C5.55054 29.046 6.30353 28.9814 6.81361 29.4039L24.3474 43.9285L26.2481 42.4818C31.6604 38.3492 37.6374 35.0794 44.0092 32.7635L46.1898 31.97L44.1041 9.69075C44.0427 9.03628 44.5272 8.4548 45.1713 8.39256L70.6968 6.0037C71.1119 5.96095 71.4091 6.15165 71.5476 6.26645C71.6879 6.38265 71.9296 6.63991 71.9671 7.06866L74.0188 28.969L76.3836 29.2902C83.3305 30.2354 90.035 32.2354 96.3115 35.2345L98.4254 36.245L112.292 19.5052C112.716 18.9937 113.45 18.9261 113.962 19.3503L133.693 35.6949C134.196 36.1112 134.266 36.8607 133.85 37.3633L120.047 54.0264L121.459 55.9185C125.664 61.5598 128.945 67.79 131.209 74.4415L131.974 76.6843L153.558 74.6574C153.988 74.6162 154.289 74.8078 154.429 74.924C154.571 75.0416 154.813 75.3017 154.853 75.7302L157.242 101.234C157.284 101.66 157.093 101.96 156.977 102.1C156.861 102.24 156.602 102.481 156.173 102.521L134.357 104.572L133.992 106.876C132.911 113.711 130.788 120.316 127.679 126.505L126.608 128.642L143.756 142.847C144.253 143.258 144.32 144.003 143.903 144.506L127.56 164.235C127.141 164.74 126.397 164.813 125.898 164.405L108.427 149.932L106.547 151.279C101.093 155.179 95.0852 158.241 88.689 160.376L86.425 161.132L88.3735 180.658C88.4152 181.072 88.4431 184.839 88.3281 184.978C88.2119 185.119 87.953 185.359 87.5216 185.4L62.0295 187.809C61.6008 187.846 61.297 187.654 61.1522 187.534C61.0192 187.424 60.726 184.342 60.652 183.564L60.6388 183.426L58.5242 163.339L56.2367 162.965C49.7828 161.909 43.539 159.924 37.6726 157.066L35.5492 156.032L20.409 174.309C19.9965 174.807 19.2503 174.873 18.7477 174.457L0 158.926V166.725ZM0 60.1075V88.7498L0.284967 86.7295C1.2093 80.1898 3.08207 73.8428 5.85388 67.8609L6.8254 65.7615L0 60.1075ZM100.269 124.992C115.76 106.291 113.147 78.4713 94.4448 62.9786C75.7423 47.4859 47.9239 50.0976 32.4327 68.7981C16.94 87.5006 19.5497 115.32 38.2522 130.813C56.9546 146.306 84.7758 143.694 100.269 124.992ZM95.6428 121.161C82.2614 137.315 58.2375 139.57 42.0835 126.188C25.9314 112.808 23.6766 88.7838 37.0579 72.6303C50.4367 56.4797 74.4606 54.2246 90.6127 67.6047C106.767 80.9863 109.022 105.01 95.6428 121.161ZM272.901 335.355C273.226 333.593 273.405 332.089 273.405 332.089V317.224C278.974 315.774 284.332 313.682 289.386 310.986L302.111 323.861C304.893 326.676 309.451 326.697 312.272 323.909L330.493 305.901C333.314 303.113 333.343 298.558 330.561 295.743L318.24 283.276C321.259 278.145 323.633 272.684 325.323 266.98L342.61 267.079C344.532 267.093 346.345 266.357 347.71 265.008C349.079 263.658 349.835 261.854 349.845 259.931L350 234.322C350.025 230.474 346.698 227.105 342.847 227.083L325.869 226.982C324.303 221.128 322.025 215.504 319.069 210.208L331.127 198.291C333.948 195.503 333.973 190.94 331.186 188.121L313.176 169.898C310.388 167.077 305.826 167.05 303.002 169.839L290.847 181.853C285.623 178.908 280.053 176.622 274.236 175.035L274.34 157.783C274.381 153.939 271.019 150.549 267.197 150.542L241.566 150.384C237.615 150.371 234.373 153.575 234.342 157.532L234.234 175.315C228.656 176.923 223.29 179.198 218.235 182.092L205.558 169.266C202.765 166.439 198.198 166.406 195.378 169.193L177.156 187.202C174.334 189.992 174.314 194.56 177.107 197.386L190.187 210.62C187.494 215.534 185.372 220.739 183.864 226.148L165.031 226.039C161.081 226.01 157.84 229.21 157.804 233.178L157.651 258.814C157.627 262.638 160.968 266.016 164.793 266.038L183.958 266.152C185.459 271.441 187.544 276.536 190.177 281.348L176.527 294.839C173.71 297.623 173.689 302.182 176.477 305.003L194.488 323.226C197.276 326.047 201.833 326.078 204.648 323.292L218.2 309.897C223.005 312.648 228.102 314.844 233.411 316.45V332.089C233.409 333.05 233.61 334.189 233.973 335.355H239.577C239.543 334.346 239.551 332.761 239.553 332.23V332.228L239.554 332.089L239.444 311.892L237.205 311.292C230.888 309.6 224.872 307.005 219.318 303.579L217.308 302.34L200.428 319.023C199.968 319.478 199.219 319.469 198.76 319.005L180.75 300.782C180.282 300.309 180.284 299.575 180.752 299.115L197.707 282.359L196.516 280.343C193.225 274.768 190.76 268.742 189.185 262.437L188.62 260.174L164.836 260.034C164.419 260.034 164.137 259.811 164.006 259.679C163.876 259.547 163.659 259.262 163.662 258.848L163.814 233.224C163.818 232.57 164.349 232.042 164.998 232.046L188.536 232.182L189.099 229.878C190.668 223.462 193.162 217.333 196.514 211.655L197.689 209.663L181.379 193.16C180.914 192.689 180.914 191.932 181.379 191.472L199.602 173.462C200.066 173.002 200.822 173.013 201.288 173.484L217.293 189.678L219.328 188.427C225.124 184.852 231.396 182.192 237.966 180.52L240.215 179.947L240.351 157.571C240.355 156.913 240.895 156.383 241.542 156.385L267.179 156.542C267.596 156.541 267.873 156.76 267.999 156.888C268.127 157.018 268.342 157.298 268.337 157.728L268.204 179.724L270.525 180.278C277.344 181.909 283.817 184.565 289.764 188.172L291.768 189.387L307.228 174.107C307.701 173.64 308.438 173.646 308.905 174.119L326.916 192.342C327.374 192.806 327.37 193.559 326.906 194.018L311.517 209.228L312.734 211.251C316.358 217.282 319.004 223.807 320.596 230.65L321.135 232.958L342.814 233.084C343.245 233.086 343.526 233.307 343.654 233.436C343.784 233.567 343.999 233.85 343.996 234.28L343.841 259.895C343.84 260.324 343.62 260.603 343.491 260.731C343.361 260.859 343.08 261.072 342.649 261.07L320.737 260.944L320.146 263.2C318.39 269.895 315.622 276.257 311.914 282.106L310.637 284.126L326.29 299.964C326.743 300.422 326.735 301.17 326.271 301.629L308.05 319.637C307.583 320.099 306.835 320.098 306.379 319.642L290.431 303.506L288.427 304.659C282.612 307.999 276.331 310.449 269.754 311.938L267.426 312.465V332.089C267.427 332.37 267.268 334.175 267.126 335.355H272.901ZM284.79 277.879C302.062 260.808 302.224 232.867 285.152 215.594C268.08 198.321 240.14 198.157 222.869 215.227C205.596 232.299 205.43 260.24 222.502 277.514C239.574 294.787 267.517 294.951 284.79 277.879ZM280.567 273.607C265.648 288.353 241.519 288.211 226.773 273.292C212.03 258.374 212.171 234.245 227.091 219.5C242.007 204.757 266.136 204.899 280.88 219.816C295.625 234.736 295.484 258.865 280.567 273.607ZM144.272 325.301C144.134 328.672 143.831 332.026 143.363 335.355H134.872C135.551 330.921 135.912 326.434 135.951 321.922L135.978 318.622L165.459 311.718C166.348 311.51 166.903 310.615 166.695 309.727L158.531 274.864C158.319 273.96 157.443 273.415 156.538 273.627L126.921 280.563L125.42 277.653C120.962 269.013 115.181 261.125 108.238 254.207L105.874 251.852L122.114 225.728C122.434 225.219 122.383 224.729 122.325 224.481C122.267 224.236 122.097 223.773 121.599 223.47L91.1278 204.579C90.3572 204.104 89.3252 204.343 88.84 205.124L72.3174 231.698L69.2157 230.741C60.1548 227.94 50.7269 226.536 41.1984 226.569L37.8562 226.575L30.6006 195.594C30.3896 194.693 29.4956 194.129 28.6056 194.338L0 200.689V192.418L26.6869 186.168C32.0883 184.903 37.5134 188.274 38.7798 193.682L44.5264 218.219C52.6737 218.458 60.7389 219.661 68.5688 221.813L81.6992 200.694C84.6287 195.999 90.8393 194.545 95.5435 197.443L126.008 216.33C130.562 219.126 132.095 225.621 129.236 230.173L116.498 250.663C122.278 256.798 127.252 263.588 131.331 270.909L154.616 265.456C160.025 264.192 165.448 267.551 166.712 272.948L174.877 307.811C176.14 313.206 172.774 318.626 167.37 319.892L144.272 325.301ZM99.8693 306.977C102.132 316.637 101.97 326.309 99.7828 335.355H91.0992C93.4618 326.991 93.8025 317.936 91.6847 308.894C85.001 280.354 56.3169 262.582 27.7425 269.274C16.5793 271.888 7.05917 277.854 0 285.855V274.119C7.22399 267.974 15.9738 263.409 25.8293 261.101C58.9151 253.352 92.1302 273.931 99.8693 306.977Z"
-              />
-            </svg>
-          </div>
+    </section>
+    <section id="about-me" class="px-10 py-8 about-me max-sm:px-4 bg-slate-50">
+      <div class="w-full">
+        <div class="w-full h-fit flex">
+          <div class="w-2 h-auto bg-violet-500 mr-5"></div>
+          <div class="text-4xl font-bold max-sm:text-2xl ml-2">SOBRE MI</div>
         </div>
-        <div
-          class="flex items-center absolute justify-center w-full h-full overflow-hidden"
-        >
-          <div
-            class="rounded-full circle-background relative border-8 border-sky-300 border-opacity-20 max-md:w-60 max-md:h-60"
-          ></div>
-          <div class="absolute">
-            <div class="flex">
-              <div class="w-3 h-auto flex items-center mr-4 ml-8 max-md:hidden">
-                <div class="w-3 h-2/5 bg-orange-500"></div>
-              </div>
-              <div
-                class="-sm:text-lg text-5xl font-bold text-center card-information max-lg:text-4xl max-md:text-3xl max-sm:text-xl leading-tight"
-              >
-                <p>
-                  Hola! Soy Luciano Lopez <br />futuro
-                  <span class="text-violet-500">Ingeniero de Software</span>
-                  <br />
-                  10mo ciclo
-                </p>
-              </div>
-              <div class="w-3 h-auto flex items-center mr-4 ml-8 max-md:hidden">
-                <div class="w-3 h-2/5 bg-orange-500"></div>
-              </div>
-            </div>
+        <div class="mt-8 flex justify-evenly items-center max-md:flex-col">
+          <div class="w-2/5 max-md:w-full max-md:mb-10">
+            <p class="text-justify">
+              Mi nombre es
+              <span class="text-violet-500 font-medium">Luciano</span>. Soy
+              <span class="text-violet-500 font-medium">desarrollador de software</span>
+              con sólidos conocimientos en
+              <span class="text-violet-500 font-medium">análisis de datos</span>. Me defino como una persona proactiva y
+              siempre dispuesta a
+              sumergirme en el aprendizaje de nuevas tecnologías. Actualmente,
+              estoy cursando la carrera de
+              <span class="text-violet-500 font-medium">Ingeniería de Software</span>
+              en la Universidad
+              <span class="text-red-500 font-medium">UPC</span>. Considero que
+              la sed de aprendizaje es clave en mi desarrollo profesional,
+              siempre en busqueda de nuevos retos donde puedo adquirir nuevos
+              conocimientos.
+            </p>
           </div>
-        </div>
-      </section>
-      <section id="about-me" class="px-10 py-8 about-me max-sm:px-4 bg-slate-50">
-        <div class="w-full">
-          <div class="w-full h-fit flex">
-            <div class="w-2 h-auto bg-violet-500 mr-5"></div>
-            <div class="text-4xl font-bold max-sm:text-2xl ml-2">SOBRE MI</div>
-          </div>
-          <div class="mt-8 flex justify-evenly items-center max-md:flex-col">
-            <div class="w-2/5 max-md:w-full max-md:mb-10">
-              <p class="text-justify">
-                Mi nombre es
-                <span class="text-violet-500 font-medium">Luciano</span>. Soy
-                <span class="text-violet-500 font-medium"
-                  >desarrollador de software</span
-                >
-                con sólidos conocimientos en
-                <span class="text-violet-500 font-medium"
-                  >análisis de datos</span
-                >. Me defino como una persona proactiva y siempre dispuesta a
-                sumergirme en el aprendizaje de nuevas tecnologías. Actualmente,
-                estoy cursando la carrera de
-                <span class="text-violet-500 font-medium"
-                  >Ingeniería de Software</span
-                >
-                en la Universidad
-                <span class="text-red-500 font-medium">UPC</span>. Considero que
-                la sed de aprendizaje es clave en mi desarrollo profesional,
-                siempre en busqueda de nuevos retos donde puedo adquirir nuevos
-                conocimientos.
-              </p>
-            </div>
-            <div>
-              <div class="w-2/5 photo relative">
-                <div class="w-full h-full bg-violet-500 flex relative"></div>
-                <div class="w-full h-full bg-white photo absolute ml-5 mt-5 top-0">
-                  <img src="./img/foto.webp" class="h-full w-full" />
-                </div>
-                
+          <div>
+            <div class="w-2/5 photo relative">
+              <div class="w-full h-full bg-violet-500 flex relative"></div>
+              <div class="w-full h-full bg-white photo absolute ml-5 mt-5 top-0">
+                <img src="./img/foto.webp" class="h-full w-full" />
               </div>
-              <div
-                class="w-full mt-10 flex justify-center items-center space-x-3"
-              >
-                <a
-                  class="bg-blue-500 w-10 h-10 flex justify-center items-center rounded-md"
-                  href="https://www.linkedin.com/in/luciano-mardonio-lopez-duran"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin text-3xl text-white"></i>
-                </a>
-                <a
-                  class="bg-gray-700 w-10 h-10 flex justify-center items-center rounded-md"
-                  href="https://github.com/luclozdun"
-                  target="_blank"
-                >
-                  <i class="fab fa-github text-3xl text-white"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full my-20 flex justify-center">
-          <div class="container-card grid grid-cols-2 gap-3">
-            <div
-              class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md"
-            >
-              <p class="font-medium">INTEGRACIÓN AL EQUIPO</p>
-              <div class="w-14 h-14 my-4 flex justify-center items-center">
-                <i class="fa-solid fa-people-group text-4xl text-gray-300"></i>
-              </div>
-              <p class="text-sm px-8 max-md:px-1">
-                Adapto a nuevos entornos laborales con facilidad y rapida.
-              </p>
-            </div>
-            <div
-              class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md"
-            >
-              <p class="font-medium">HERRAMIENTAS EXTERNAS</p>
-              <div class="w-14 h-14 my-4 flex justify-center items-center">
-                <i class="fa-solid fa-toolbox text-4xl text-gray-300"></i>
-              </div>
-              <p class="text-sm px-8 max-md:px-1">
-                Conocimiento en herramientas externas de reportes y ofimática.
-              </p>
-            </div>
-            <div
-              class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md"
-            >
-              <p class="font-medium">DESARROLLO FRONTEND</p>
-              <div class="w-14 h-14 my-4 flex justify-center items-center">
-                <i class="fa-solid fa-desktop text-4xl text-gray-300"></i>
-              </div>
-              <p class="text-sm px-8 max-md:px-1">
-                Conocimiento en frameworks front y librerias de sistemas
-                externos.
-              </p>
-            </div>
-            <div
-              class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md"
-            >
-              <p class="font-medium">DESARROLLO BACKEND</p>
-              <div class="w-14 h-14 my-4 flex justify-center items-center">
-                <i class="fa-solid fa-database text-4xl text-gray-300"></i>
-              </div>
-              <p class="text-sm px-8 max-md:px-1">
-                Conocimiento frameworks back y gestión de datos del sistema.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="knowledges" class="mx-10 my-8 knowledges max-sm:mx-4">
-        <div class="w-full">
-          <div class="w-full h-fit flex">
-            <div class="w-2 h-auto bg-violet-500"></div>
-            <div class="text-4xl font-bold max-sm:text-2xl ml-2">
-              CONOCIMIENTOS
-            </div>
-          </div>
-          <div class="mt-8 flex flex-col space-y-10">
-            <div class="w-full">
-              <p
-                class="text-xl underline font-medium text-violet-500 max-sm:text-base"
-              >
-                BACKEND
-              </p>
-              <div
-                id="backendSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
-              ></div>
-            </div>
-            <div class="w-full">
-              <p
-                class="text-xl underline font-medium text-violet-500 max-sm:text-base"
-              >
-                BASE DE DATOS
-              </p>
-              <div
-                id="dbSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
-              ></div>
-            </div>
-            <div class="w-full">
-              <p
-                class="text-xl underline font-medium text-violet-500 max-sm:text-base"
-              >
-                FRONTEND
-              </p>
-              <div
-                id="frontendSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
-              ></div>
-            </div>
-            <div class="w-full">
-              <p
-                class="text-xl underline font-medium text-violet-500 max-sm:text-base"
-              >
-                OTROS CONOCIMIENTOS
-              </p>
-              <div
-                id="extraSection"
-                class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="px-10 py-8 projects max-sm:px-4 bg-slate-50">
-        <div class="w-full">
-          <div class="w-full h-fit flex mb-5">
-            <div class="w-2 h-auto bg-violet-500"></div>
-            <div class="text-4xl font-bold max-sm:text-2xl ml-2">PROYECTOS</div>
-          </div>
-          <div id="all-projects"></div>
-        </div>
-      </section>
-    </div>
 
-    <script>
-      const navBar = document.getElementById("hamburg");
+            </div>
+            <div class="w-full mt-10 flex justify-center items-center space-x-3">
+              <a class="bg-blue-500 w-10 h-10 flex justify-center items-center rounded-md"
+                href="https://www.linkedin.com/in/luciano-mardonio-lopez-duran" target="_blank">
+                <i class="fab fa-linkedin text-3xl text-white"></i>
+              </a>
+              <a class="bg-gray-700 w-10 h-10 flex justify-center items-center rounded-md"
+                href="https://github.com/luclozdun" target="_blank">
+                <i class="fab fa-github text-3xl text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full my-20 flex justify-center">
+        <div class="container-card grid grid-cols-2 gap-3">
+          <div class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md">
+            <p class="font-medium">INTEGRACIÓN AL EQUIPO</p>
+            <div class="w-14 h-14 my-4 flex justify-center items-center">
+              <i class="fa-solid fa-people-group text-4xl text-gray-300"></i>
+            </div>
+            <p class="text-sm px-8 max-md:px-1">
+              Adapto a nuevos entornos laborales con facilidad y rapida.
+            </p>
+          </div>
+          <div class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md">
+            <p class="font-medium">HERRAMIENTAS EXTERNAS</p>
+            <div class="w-14 h-14 my-4 flex justify-center items-center">
+              <i class="fa-solid fa-toolbox text-4xl text-gray-300"></i>
+            </div>
+            <p class="text-sm px-8 max-md:px-1">
+              Conocimiento en herramientas externas de reportes y ofimática.
+            </p>
+          </div>
+          <div class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md">
+            <p class="font-medium">DESARROLLO FRONTEND</p>
+            <div class="w-14 h-14 my-4 flex justify-center items-center">
+              <i class="fa-solid fa-desktop text-4xl text-gray-300"></i>
+            </div>
+            <p class="text-sm px-8 max-md:px-1">
+              Conocimiento en frameworks front y librerias de sistemas
+              externos.
+            </p>
+          </div>
+          <div class="px-2 py-3 text-center rounded-lg flex flex-col items-center bg-white shadow-md">
+            <p class="font-medium">DESARROLLO BACKEND</p>
+            <div class="w-14 h-14 my-4 flex justify-center items-center">
+              <i class="fa-solid fa-database text-4xl text-gray-300"></i>
+            </div>
+            <p class="text-sm px-8 max-md:px-1">
+              Conocimiento frameworks back y gestión de datos del sistema.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="knowledges" class="mx-10 my-8 knowledges max-sm:mx-4">
+      <div class="w-full">
+        <div class="w-full h-fit flex">
+          <div class="w-2 h-auto bg-violet-500"></div>
+          <div class="text-4xl font-bold max-sm:text-2xl ml-2">
+            CONOCIMIENTOS
+          </div>
+        </div>
+        <div class="mt-8 flex flex-col space-y-10">
+          <div class="w-full">
+            <p class="text-xl underline font-medium text-violet-500 max-sm:text-base">
+              BACKEND
+            </p>
+            <div id="backendSection"
+              class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"></div>
+          </div>
+          <div class="w-full">
+            <p class="text-xl underline font-medium text-violet-500 max-sm:text-base">
+              BASE DE DATOS
+            </p>
+            <div id="dbSection"
+              class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"></div>
+          </div>
+          <div class="w-full">
+            <p class="text-xl underline font-medium text-violet-500 max-sm:text-base">
+              FRONTEND
+            </p>
+            <div id="frontendSection"
+              class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"></div>
+          </div>
+          <div class="w-full">
+            <p class="text-xl underline font-medium text-violet-500 max-sm:text-base">
+              OTROS CONOCIMIENTOS
+            </p>
+            <div id="extraSection"
+              class="grid grid-cols-6 gap-5 mt-5 w-full max-xl:grid-cols-4 max-md:grid-cols-2 max-md:gap-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="px-10 py-8 projects max-sm:px-4 bg-slate-50">
+      <div class="w-full">
+        <div class="w-full h-fit flex mb-5">
+          <div class="w-2 h-auto bg-violet-500"></div>
+          <div class="text-4xl font-bold max-sm:text-2xl ml-2">PROYECTOS</div>
+        </div>
+        <div id="all-projects"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TSTHK2PJZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7TSTHK2PJZ');
+  </script>
+
+  <script>
+    const navBar = document.getElementById("hamburg");
+    const content = document.getElementById("nav-bar-content");
+
+    content.addEventListener("click", () => {
       const content = document.getElementById("nav-bar-content");
 
-      content.addEventListener("click", () => {
-        const content = document.getElementById("nav-bar-content");
+      content.classList.add("max-md:hidden");
+      content.classList.remove("max-md:flex");
+    });
 
+    navBar.addEventListener("click", () => {
+      const content = document.getElementById("nav-bar-content");
+
+      const isHidden = content.classList.contains("max-md:hidden");
+
+      if (isHidden) {
+        content.classList.remove("max-md:hidden");
+        content.classList.add("max-md:flex");
+      } else {
         content.classList.add("max-md:hidden");
         content.classList.remove("max-md:flex");
-      });
+      }
+    });
 
-      navBar.addEventListener("click", () => {
-        const content = document.getElementById("nav-bar-content");
-
-        const isHidden = content.classList.contains("max-md:hidden");
-
-        if (isHidden) {
-          content.classList.remove("max-md:hidden");
-          content.classList.add("max-md:flex");
-        } else {
-          content.classList.add("max-md:hidden");
-          content.classList.remove("max-md:flex");
-        }
-      });
-
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          var navbarHeight = document.getElementById("navbar").offsetHeight;
-          var targetId = this.getAttribute("href").substring(1);
-          var targetElement = document.getElementById(targetId);
-          var offsetPosition = targetElement.offsetTop - navbarHeight - 15;
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-          });
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var navbarHeight = document.getElementById("navbar").offsetHeight;
+        var targetId = this.getAttribute("href").substring(1);
+        var targetElement = document.getElementById(targetId);
+        var offsetPosition = targetElement.offsetTop - navbarHeight - 15;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
         });
       });
+    });
 
-      conocimientos = (id, array) => {
-        const container = document.getElementById(id);
+    conocimientos = (id, array) => {
+      const container = document.getElementById(id);
 
-        array.forEach((value, index) => {
-          const section = document.createElement("div");
-          section.classList.add(
-            "flex",
-            "flex-col",
-            "items-center",
-            "p-5",
-            "rounded-md",
-            "shadow-lg",
-            "space-y-2"
-          );
-          section.innerHTML = `
+      array.forEach((value, index) => {
+        const section = document.createElement("div");
+        section.classList.add(
+          "flex",
+          "flex-col",
+          "items-center",
+          "p-5",
+          "rounded-md",
+          "shadow-lg",
+          "space-y-2"
+        );
+        section.innerHTML = `
                 <p class="text-center font-medium max-sm:text-sm">${value.name}</p>
-                                    <p class="text-center max-sm:text-sm">${
-                                      value.framework
-                                    }</p>
+                                    <p class="text-center max-sm:text-sm">${value.framework
+          }</p>
                                     <div class="py-2">
                                         <div class="w-24 h-24 flex justify-center items-center">
-                                            ${
-                                              value.type === "icon-text"
-                                                ? `<i class="${value.icon} text-8xl"></i>`
-                                                : ""
-                                            }
-                                            ${
-                                              value.type === "svg"
-                                                ? `<img class="w-full" src="${value.src}">`
-                                                : ""
-                                            }
+                                            ${value.type === "icon-text"
+            ? `<i class="${value.icon} text-8xl"></i>`
+            : ""
+          }
+                                            ${value.type === "svg"
+            ? `<img class="w-full" src="${value.src}">`
+            : ""
+          }
                                         </div>
                                     </div>
                                     <div class="w-full">
                                         <p class="underline text-center mb-3">Nivel</p>
                                         <div class="relative h-7 flex items-center justify-center mt-1 border border-black rounded-full overflow-hidden">
-                                            <div class="absolute top-0 bottom-0 left-0 rounded-lg w-[${
-                                              value.percentage
-                                            }] bg-slate-100"></div>
-                                            <div class="relative text-blue-900 font-medium text-sm">${
-                                              value.level
-                                            }</div>
+                                            <div class="absolute top-0 bottom-0 left-0 rounded-lg w-[${value.percentage
+          }] bg-slate-100"></div>
+                                            <div class="relative text-blue-900 font-medium text-sm">${value.level
+          }</div>
                                          </div>
                                     </div>
                 `;
-          container.appendChild(section);
-        });
-      };
+        container.appendChild(section);
+      });
+    };
 
-      const backSection = [
-        {
-          name: "C#",
-          framework: "Entity Framework",
-          icon: "devicon-csharp-plain-wordmark colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "JAVA",
-          framework: "Spring Boot",
-          icon: "devicon-java-plain-wordmark colored",
-          percentage: "66%",
-          level: "Intermedio",
-          type: "icon-text",
+    const backSection = [
+      {
+        name: "C#",
+        framework: "Entity Framework",
+        icon: "devicon-csharp-plain-wordmark colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "JAVA",
+        framework: "Spring Boot",
+        icon: "devicon-java-plain-wordmark colored",
+        percentage: "66%",
+        level: "Intermedio",
+        type: "icon-text",
 
-        },
-      ];
+      },
+    ];
 
-      const frontSection = [
-        {
-          name: "JAVASCRIPT",
-          framework: "Nativo",
-          icon: "devicon-javascript-plain text-yellow-300",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "JAVASCRIPT",
-          framework: "Jquery",
-          icon: "devicon-jquery-plain-wordmark colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "JAVASCRIPT",
-          framework: "React",
-          icon: "devicon-react-original-wordmark colored",
-          percentage: "66%",
-          level: "Intermedio",
-          type: "icon-text",
-        },
-        {
-          name: "TYPESCRIPT",
-          framework: "Vue",
-          icon: "devicon-vuejs-plain colored",
-          percentage: "66%",
-          level: "Intermedio",
-          type: "icon-text",
-        },
-        {
-          name: "TYPESCRIPT",
-          framework: "Angular",
-          icon: "devicon-angularjs-plain colored",
-          percentage: "33%",
-          level: "Básico",
-          type: "icon-text",
-        },
-      ];
+    const frontSection = [
+      {
+        name: "JAVASCRIPT",
+        framework: "Nativo",
+        icon: "devicon-javascript-plain text-yellow-300",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "JAVASCRIPT",
+        framework: "Jquery",
+        icon: "devicon-jquery-plain-wordmark colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "JAVASCRIPT",
+        framework: "React",
+        icon: "devicon-react-original-wordmark colored",
+        percentage: "66%",
+        level: "Intermedio",
+        type: "icon-text",
+      },
+      {
+        name: "TYPESCRIPT",
+        framework: "Vue",
+        icon: "devicon-vuejs-plain colored",
+        percentage: "66%",
+        level: "Intermedio",
+        type: "icon-text",
+      },
+      {
+        name: "TYPESCRIPT",
+        framework: "Angular",
+        icon: "devicon-angularjs-plain colored",
+        percentage: "33%",
+        level: "Básico",
+        type: "icon-text",
+      },
+    ];
 
-      const dbSection = [
-        {
-          name: "SQL",
-          framework: "",
-          icon: "devicon-microsoftsqlserver-plain-wordmark text-blue-500",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "MySQL",
-          framework: "",
-          icon: "devicon-mysql-plain-wordmark colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "PostgreSQL",
-          framework: "",
-          icon: "devicon-postgresql-plain-wordmark colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-      ];
+    const dbSection = [
+      {
+        name: "SQL",
+        framework: "",
+        icon: "devicon-microsoftsqlserver-plain-wordmark text-blue-500",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "MySQL",
+        framework: "",
+        icon: "devicon-mysql-plain-wordmark colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "PostgreSQL",
+        framework: "",
+        icon: "devicon-postgresql-plain-wordmark colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+    ];
 
-      const extraSection = [
-        {
-          name: "GIT",
-          framework: "Versionador",
-          icon: "devicon-git-plain colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "BOOSTRAP",
-          framework: "Estilizador",
-          icon: "devicon-bootstrap-plain colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "TAILWIND",
-          framework: "Estilizador",
-          icon: "devicon-tailwindcss-plain colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "SCRUM",
-          framework: "Metodología",
-          icon: "fas fa-sync text-cyan-500",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "EXCEL",
-          framework: "Tabla - Macro",
-          src: "./svg/excel.svg",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "svg",
-        },
-        {
-          name: "C++",
-          framework: "Nativo",
-          icon: "devicon-cplusplus-plain text-blue-500",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "Python",
-          framework: "Nativo",
-          icon: "devicon-python-plain colored",
-          percentage: "100%",
-          level: "Avanzado",
-          type: "icon-text",
-        },
-        {
-          name: "BOLD REPORT",
-          framework: "Reportería",
-          src: "./svg/bold-report.svg",
-          percentage: "66%",
-          level: "Intermedio",
-          type: "svg",
-        },
-        {
-          name: "PROJECT",
-          framework: "Cronograma",
-          src: "./svg/projectms.svg",
-          percentage: "66%",
-          level: "Intermedio",
-          type: "svg",
-        },
-        {
-          name: "POWER BI",
-          framework: "Reportería",
-          src: "./svg/power-bi.svg",
-          percentage: "33%",
-          level: "Intermedio",
-          type: "svg",
-        },
-        {
-          name: "AWS",
-          framework: "Cloud",
-          src: "./svg/aws.svg",
-          percentage: "33%",
-          level: "Básico",
-          type: "svg",
-        },
-      ];
+    const extraSection = [
+      {
+        name: "GIT",
+        framework: "Versionador",
+        icon: "devicon-git-plain colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "BOOSTRAP",
+        framework: "Estilizador",
+        icon: "devicon-bootstrap-plain colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "TAILWIND",
+        framework: "Estilizador",
+        icon: "devicon-tailwindcss-plain colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "SCRUM",
+        framework: "Metodología",
+        icon: "fas fa-sync text-cyan-500",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "EXCEL",
+        framework: "Tabla - Macro",
+        src: "./svg/excel.svg",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "svg",
+      },
+      {
+        name: "C++",
+        framework: "Nativo",
+        icon: "devicon-cplusplus-plain text-blue-500",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "Python",
+        framework: "Nativo",
+        icon: "devicon-python-plain colored",
+        percentage: "100%",
+        level: "Avanzado",
+        type: "icon-text",
+      },
+      {
+        name: "BOLD REPORT",
+        framework: "Reportería",
+        src: "./svg/bold-report.svg",
+        percentage: "66%",
+        level: "Intermedio",
+        type: "svg",
+      },
+      {
+        name: "PROJECT",
+        framework: "Cronograma",
+        src: "./svg/projectms.svg",
+        percentage: "66%",
+        level: "Intermedio",
+        type: "svg",
+      },
+      {
+        name: "POWER BI",
+        framework: "Reportería",
+        src: "./svg/power-bi.svg",
+        percentage: "33%",
+        level: "Intermedio",
+        type: "svg",
+      },
+      {
+        name: "AWS",
+        framework: "Cloud",
+        src: "./svg/aws.svg",
+        percentage: "33%",
+        level: "Básico",
+        type: "svg",
+      },
+    ];
 
-      conocimientos("backendSection", backSection);
-      conocimientos("frontendSection", frontSection);
-      conocimientos("dbSection", dbSection);
-      conocimientos("extraSection", extraSection);
+    conocimientos("backendSection", backSection);
+    conocimientos("frontendSection", frontSection);
+    conocimientos("dbSection", dbSection);
+    conocimientos("extraSection", extraSection);
 
-      proyectosContainer = (id, array) => {
-        const container = document.getElementById(id);
+    proyectosContainer = (id, array) => {
+      const container = document.getElementById(id);
 
-        array.forEach((value, index) => {
-          const section = document.createElement("div");
-          section.classList.add(
-            "grid",
-            "grid-cols-1",
-            "gap-5",
-            "border",
-            "border-slate-200",
-            "border-1",
-            "mb-5",
-            "bg-white",
-            "rounded-lg"
-          );
+      array.forEach((value, index) => {
+        const section = document.createElement("div");
+        section.classList.add(
+          "grid",
+          "grid-cols-1",
+          "gap-5",
+          "border",
+          "border-slate-200",
+          "border-1",
+          "mb-5",
+          "bg-white",
+          "rounded-lg"
+        );
 
-          var cookies = "";
-          const createCook = value.cookies.forEach((cook, ci) => {
-            cookies += `
+        var cookies = "";
+        const createCook = value.cookies.forEach((cook, ci) => {
+          cookies += `
             <div class="text-base text-white ${cook.color} w-fit px-3 rounded-full font-medium mr-2 mb-1 max-sm:text-sm">
                 <p>${cook.name}</p>
             </div>
             `;
-          });
+        });
 
-          var links = "";
+        var links = "";
 
-          value.links?.forEach((link, li) => {
-            links += `<a class=" px-4 py-2 rounded-md ${link?.class} max-md:w-full max-md:mx-2" target="_blank" href="${link?.href}">${link?.description}</a>`;
-          });
+        value.links?.forEach((link, li) => {
+          links += `<a class=" px-4 py-2 rounded-md ${link?.class} max-md:w-full max-md:mx-2" target="_blank" href="${link?.href}">${link?.description}</a>`;
+        });
 
-          section.innerHTML = `
+        section.innerHTML = `
             <div class="p-5 grid grid-cols-2 max-xl:grid-cols-1 text-justify max-sm:p-1">
                 <div class="space-y-8 mx-14 max-md:mx-3">
                     <div class="flex flex-col">
-                        <p class="text-2xl font-medium max-sm:text-lg">${
-                          value.name
-                        } - <span class="${value.from.color}">${
-            value.from.name
+                        <p class="text-2xl font-medium max-sm:text-lg">${value.name
+          } - <span class="${value.from.color}">${value.from.name
           }</span></p>
-                        ${
-                          value.period
-                            ? `<p class="font-medium">${value.periodI} <span class="font-normal">al</span> ${value.periodE}</p>`
-                            : ""
-                        }
+                        ${value.period
+            ? `<p class="font-medium">${value.periodI} <span class="font-normal">al</span> ${value.periodE}</p>`
+            : ""
+          }
                         
                     </div>                    
                     <div class="flex flex-wrap">
@@ -622,127 +566,126 @@
                     <div class="bg-gray-600 w-20 h-5 rounded-full max-sm:w-20 max-sm:h-3"></div>
                 </div>
             </div>
-            ${
-              value.button
-                ? `
+            ${value.button
+            ? `
                 <div class="flex justify-center space-x-5 items-center py-5 font-medium text-white max-md:space-x-0 max-md:mx-5 max-md:text-center max-md:space-y-2 max-md:flex-col">
                     ${links}
                 </div>
                 `
-                : ""
-            }            
+            : ""
+          }            
                 `;
-          container.appendChild(section);
-        });
-      };
+        container.appendChild(section);
+      });
+    };
 
-      const projects = [
-        {
-          name: "Diagrama Hasse",
-          from: {
-            name: "Propio",
-            color: "text-violet-500",
+    const projects = [
+      {
+        name: "Diagrama Hasse",
+        from: {
+          name: "Propio",
+          color: "text-violet-500",
+        },
+        period: false,
+        cookies: [
+          {
+            name: "C++",
+            color: "bg-blue-500",
           },
-          period: false,
-          cookies: [
-            {
-              name: "C++",
-              color: "bg-blue-500",
-            },
-          ],
-          image: "./img/hasse.webp",
-          text: `<p>
+        ],
+        image: "./img/hasse.webp",
+        text: `<p>
             Durante el año académico de <span class="font-medium text-violet-500">2019</span>, trabajé en un proyecto de Diagrama de Hasse como parte de mi curso de <span class="font-medium text-violet-500">Matemática Discreta</span> en la Universidad.
             Este proyecto se llevó a cabo en respuesta a los requisitos establecidos por el profesor. Su objetivo principal fue la representación gráfica de números y la creación de un diagrama que destacara la composición de números primos.
             <br>
             Este proyecto resultó ser un desafío estimulante, ya que subrayó la importancia de tener una lógica clara antes de comenzar a desarrollar el sistema. Comprendí que abordar el proyecto con un sólido conocimiento previo es fundamental para lograr un resultado de calidad.
         </p>`,
-          button: true,
-          links: [
-            {
-              description: '<i class="fab fa-github mr-3"></i> Git Hub',
-              href: "https://github.com/luclozdun/DiagramHasse",
-              class: "bg-gray-700",
-            },
-            {
-              description: '<i class="fab fa-youtube mr-3"></i> Vizualizar',
-              href: "https://youtu.be/0WwITdu1dNs",
-              class: "bg-violet-500",
-            },
-          ],
-        },
-        {
-          name: "Enrutamiento de Vehículos",
-          from: {
-            name: "Propio",
-            color: "text-violet-500",
+        button: true,
+        links: [
+          {
+            description: '<i class="fab fa-github mr-3"></i> Git Hub',
+            href: "https://github.com/luclozdun/DiagramHasse",
+            class: "bg-gray-700",
           },
-          period: false,
-          cookies: [
-            {
-              name: "Python",
-              color: "bg-yellow-400",
-            },
-            {
-              name: "Jupyter",
-              color: "bg-green-700",
-            },
-          ],
-          image: "./img/Enrutamiento.webp",
-          text: `<p>
+          {
+            description: '<i class="fab fa-youtube mr-3"></i> Vizualizar',
+            href: "https://youtu.be/0WwITdu1dNs",
+            class: "bg-violet-500",
+          },
+        ],
+      },
+      {
+        name: "Enrutamiento de Vehículos",
+        from: {
+          name: "Propio",
+          color: "text-violet-500",
+        },
+        period: false,
+        cookies: [
+          {
+            name: "Python",
+            color: "bg-yellow-400",
+          },
+          {
+            name: "Jupyter",
+            color: "bg-green-700",
+          },
+        ],
+        image: "./img/Enrutamiento.webp",
+        text: `<p>
             Durante el año académico, participé en el curso de <span class="font-bold text-violet-500">Complejidad Algorítmica</span>, donde se nos encomendó desarrollar un sistema primitivo para la gestión de envíos de carga entre distintos puntos de distribución y entregas. El propósito principal de este proyecto fue implementar un sistema de inteligencia artificial utilizando el algoritmo <span class="font-medium text-violet-500">A*</span>. Este algoritmo analiza las rutas y determina la optimización de los puntos de distribución para las entregas a otros destinos.
             <br>
             Este proyecto me brindó una visión profunda de lo que implica ser profesional, especialmente al abordar la creación de sistemas de entrega de manera óptima, similar a cómo lo hacen grandes empresas como UBER, RAPPI, entre otras. Aunque mi sistema era primitivo, me demostró que, como futuro Ingeniero, tengo la capacidad de desarrollar sistemas similares, siempre y cuando tenga una base sólida.
         </p>`,
-          button: true,
-          links: [
-            {
-              description: '<i class="fab fa-github mr-3"></i> Git Hub',
-              href: "https://github.com/luclozdun/cc42_tf_201819883_20171b498",
-              class: "bg-gray-700",
-            },
-            {
-              description: '<i class="fab fa-youtube mr-3"></i> Vizualizar',
-              href: "https://youtu.be/Y8J9Az7MROM",
-              class: "bg-violet-500",
-            },
-          ],
-        },
-        {
-          name: "KeeKoYa",
-          from: {
-            name: "Propio",
-            color: "text-violet-500",
+        button: true,
+        links: [
+          {
+            description: '<i class="fab fa-github mr-3"></i> Git Hub',
+            href: "https://github.com/luclozdun/cc42_tf_201819883_20171b498",
+            class: "bg-gray-700",
           },
-          period: false,
-          cookies: [
-            {
-              name: "Java",
-              color: "bg-orange-700",
-            },
-            {
-              name: "Vue.js",
-              color: "bg-green-700",
-            },
-            {
-              name: "AWS",
-              color: "bg-orange-500",
-            },
-            {
-              name: "S3",
-              color: "bg-green-600",
-            },
-            {
-              name: "Paypal",
-              color: "bg-blue-500",
-            },
-            {
-              name: "Git",
-              color: "bg-purple-500",
-            },
-          ],
-          image: "./img/Keekoya.webp",
-          text: `<p>
+          {
+            description: '<i class="fab fa-youtube mr-3"></i> Vizualizar',
+            href: "https://youtu.be/Y8J9Az7MROM",
+            class: "bg-violet-500",
+          },
+        ],
+      },
+      {
+        name: "KeeKoYa",
+        from: {
+          name: "Propio",
+          color: "text-violet-500",
+        },
+        period: false,
+        cookies: [
+          {
+            name: "Java",
+            color: "bg-orange-700",
+          },
+          {
+            name: "Vue.js",
+            color: "bg-green-700",
+          },
+          {
+            name: "AWS",
+            color: "bg-orange-500",
+          },
+          {
+            name: "S3",
+            color: "bg-green-600",
+          },
+          {
+            name: "Paypal",
+            color: "bg-blue-500",
+          },
+          {
+            name: "Git",
+            color: "bg-purple-500",
+          },
+        ],
+        image: "./img/Keekoya.webp",
+        text: `<p>
             "Es un sistema diseñado para facilitar las ventas de
             productos de pastelería, concebido como una idea
             innovadora durante la pandemia. Inicialmente, se creó una
@@ -761,60 +704,60 @@
             práctico, reforzando mi comprensión de diversas
             tecnologías y servicios."
           </p>`,
-          button: true,
-          links: [
-            {
-              description: '<i class="fas fa-globe mr-3"></i> Ir sitio',
-              href: "https://dh1t7mzrl655x.cloudfront.net/",
-              class: "bg-violet-500",
-            },
-          ],
-        },
-        {
-          name: "CASistemas",
-          period: true,
-          periodI: "Enero - 2023",
-          periodE: "Marzo - 2023",
-          from: {
-            name: "Trabajo",
-            color: "text-sky-700",
+        button: true,
+        links: [
+          {
+            description: '<i class="fas fa-globe mr-3"></i> Ir sitio',
+            href: "https://dh1t7mzrl655x.cloudfront.net/",
+            class: "bg-violet-500",
           },
-          cookies: [
-            {
-              name: "C#",
-              color: "bg-purple-800",
-            },
-            {
-              name: "JQuery",
-              color: "bg-blue-700",
-            },
-            {
-              name: "MVC",
-              color: "bg-blue-500",
-            },
-            {
-              name: "Bold Report",
-              color: "bg-orange-500",
-            },
-            {
-              name: "Excel",
-              color: "bg-green-500",
-            },
-            {
-              name: "Boostrap",
-              color: "bg-violet-800",
-            },
-            {
-              name: "Storage Procedures",
-              color: "bg-blue-600",
-            },
-            {
-              name: "Git",
-              color: "bg-purple-500",
-            },
-          ],
-          image: "./img/Casistemas.webp",
-          text: `<p>
+        ],
+      },
+      {
+        name: "CASistemas",
+        period: true,
+        periodI: "Enero - 2023",
+        periodE: "Marzo - 2023",
+        from: {
+          name: "Trabajo",
+          color: "text-sky-700",
+        },
+        cookies: [
+          {
+            name: "C#",
+            color: "bg-purple-800",
+          },
+          {
+            name: "JQuery",
+            color: "bg-blue-700",
+          },
+          {
+            name: "MVC",
+            color: "bg-blue-500",
+          },
+          {
+            name: "Bold Report",
+            color: "bg-orange-500",
+          },
+          {
+            name: "Excel",
+            color: "bg-green-500",
+          },
+          {
+            name: "Boostrap",
+            color: "bg-violet-800",
+          },
+          {
+            name: "Storage Procedures",
+            color: "bg-blue-600",
+          },
+          {
+            name: "Git",
+            color: "bg-purple-500",
+          },
+        ],
+        image: "./img/Casistemas.webp",
+        text: `<p>
                 Formé parte del equipo de CASistemas, una empresa especializada en soluciones de recursos humanos. Ocupé el cargo de <span class="font-medium text-violet-500">Analista Junior</span>, donde trabajé en procedimientos almacenados y desarrollo utilizando C# .Net 3, Javascript con el framework JQuery y Bootstrap.
                 Mi función principal consistía en resolver y implementar nuevas solicitudes según los requerimientos de los clientes.
             </p>
@@ -822,62 +765,62 @@
                 Esta experiencia fue fundamental en mi desarrollo como ingeniero, ya que representó mi primera incursión laboral y me permitió comprender la importancia del rol de un ingeniero de software.
                 Considero que esta vivencia fue enriquecedora y contribuyó significativamente a mi crecimiento como profesional en el campo de la Ingeniería de Software.
             </p>`,
-          button: false,
-          link: "",
+        button: false,
+        link: "",
+      },
+      {
+        name: "UPC",
+        period: true,
+        periodI: "Junio - 2023",
+        periodE: "Julio - 2024",
+        from: {
+          name: "ABET",
+          color: "text-red-500",
         },
-        {
-          name: "UPC",
-          period: true,
-          periodI: "Junio - 2023",
-          periodE: "Julio - 2024",
-          from: {
-            name: "ABET",
-            color: "text-red-500",
+        cookies: [
+          {
+            name: "C#",
+            color: "bg-purple-800",
           },
-          cookies: [
-            {
-              name: "C#",
-              color: "bg-purple-800",
-            },
-            {
-              name: "React",
-              color: "bg-sky-400",
-            },
-            {
-              name: "AWS",
-              color: "bg-orange-500",
-            },
-            {
-              name: "S3",
-              color: "bg-green-600",
-            },
-            {
-              name: "Excel",
-              color: "bg-green-500",
-            },
-            {
-              name: "Tailwind",
-              color: "bg-sky-600",
-            },
-            {
-              name: "Storage Procedures",
-              color: "bg-blue-600",
-            },
-            {
-              name: "Scrum",
-              color: "bg-blue-600",
-            },
-            {
-              name: "Git",
-              color: "bg-purple-500",
-            },
-            {
-              name: "Scrum",
-              color: "bg-teal-500",
-            },
-          ],
-          image: "./img/UPC.webp",
-          text: `<p>
+          {
+            name: "React",
+            color: "bg-sky-400",
+          },
+          {
+            name: "AWS",
+            color: "bg-orange-500",
+          },
+          {
+            name: "S3",
+            color: "bg-green-600",
+          },
+          {
+            name: "Excel",
+            color: "bg-green-500",
+          },
+          {
+            name: "Tailwind",
+            color: "bg-sky-600",
+          },
+          {
+            name: "Storage Procedures",
+            color: "bg-blue-600",
+          },
+          {
+            name: "Scrum",
+            color: "bg-blue-600",
+          },
+          {
+            name: "Git",
+            color: "bg-purple-500",
+          },
+          {
+            name: "Scrum",
+            color: "bg-teal-500",
+          },
+        ],
+        image: "./img/UPC.webp",
+        text: `<p>
                 En la actualidad, me encuentro en la fase final de mis estudios en la Universidad <span class="font-bold text-red-500">UPC</span> y participo como miembro del equipo ABET de la universidad. En este rol, asumo la responsabilidad de cumplir con diversos requerimientos establecidos por los directores y la decana de la Facultad de Ingeniería.
                 Formo parte del equipo backend, pero también he tenido que adquirir conocimientos sustanciales en el desarrollo front-end. Esto se debe a que algunos requisitos específicos han exigido implementar cambios en esa parte del sistema.
                 Cabe destacar que todas nuestras actividades se realizan bajo la metodología <span class="font-bold text-teal-500">Scrum</span>, lo que ha añadido eficiencia y flexibilidad a nuestro proceso de trabajo.
@@ -885,12 +828,13 @@
             <p>
                 Esta experiencia ha sido sumamente enriquecedora. Aunque al principio enfrenté desafíos, incluso tuve que dejar mi trabajo para cumplir con los requisitos del curso, hoy en día considero que ha sido una de las mejores vivencias durante mi etapa universitaria. Este proyecto ha contribuido considerablemente a mi desarrollo profesional, permitiéndome explorar otros lenguajes de programación y adentrarme en entornos en la nube como AWS.
             </p>`,
-          button: false,
-          link: "",
-        },
-      ];
+        button: false,
+        link: "",
+      },
+    ];
 
-      proyectosContainer("all-projects", projects);
-    </script>
-  </body>
+    proyectosContainer("all-projects", projects);
+  </script>
+</body>
+
 </html>
